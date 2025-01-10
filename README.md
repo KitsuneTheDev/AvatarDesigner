@@ -38,7 +38,7 @@ This is an Avatar Designer web application where users can upload their image or
 File Structure
 
 ```bash
-/your-repository-name
+/AvatarDesigner
 │
 ├── index.html         # Main HTML file
 ├── index.css          # Styles for the Avatar Designer page
