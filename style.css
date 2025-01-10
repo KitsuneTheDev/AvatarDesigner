@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter_18pt-Light.ttf") format('truetype');
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter_18pt-Regular.ttf") format('truetype');
+  font-weight: regular;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter_24pt-Bold.ttf") format('truetype');
+  font-weight: bold;
+}
+
+html, body{
+  font-family: 'Inter', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  background-color: white;
+}
+/* 
+TODOS:
+1. MIN VALUES
+2. HOVER AND CLICK EFFECTS
+3. COLORS AND SHADOWS
+*/
+h1, p{
+  margin-block-end: 0;
+}
+/* NAVBAR */
+#navbar{
+  background-color: #3498DB;
+  min-height: 50px;
+}
+
+.navbar-elements{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 1.5% 0 1.6% 10% ;
+  padding: 0;
+}
+
+.navbar-elements a{
+  text-decoration: none;
+  color: white;
+  font-weight: 400px;
+  font-size: 16px;
+}
+
+/* MAIN CONTENT */
+main{
+  position: absolute;
+  left: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.content{
+  height: 80%;
+  width: 80%;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 6px;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1{
+  margin-top: 3.75%;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+main p {
+  margin-top: 2%;
+  font-weight: lighter;
+  font-size: 14px;
+  }
+
+main #image-container{
+  margin-top: 3.5%;
+  background-color: white;
+  width: 138px;
+  height: 138px;
+  border: 4px solid orange;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+main img.enabled{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+
+main img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+  display: none;
+}
+
+main #button-container {
+  margin-top: 3.25%;
+  width: 260px;
+  height: 33px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+main .img-button.enabled {
+  background-color: #3498DB;
+  border: none;
+  border-radius: 4px;
+  width: 33%;
+  padding: 8px 0 10px 0;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 2px 2px black;
+}
+
+main .img-button {
+  background-color: #3498DB;
+  border: none;
+  border-radius: 4px;
+  width: 33%;
+  padding: 8px 0 10px 0;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 2px 2px black;
+}
+
+main .img-button.enabled {
+  background-color: #3498db6e;
+  border: none;
+  border-radius: 4px;
+  width: 33%;
+  padding: 8px 0 10px 0;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 1px 1px black;
+}
+
+main .img-button:hover {
+  background-color: #3498db49;
+  cursor: pointer;
+}
+
+main .img-button:active {
+  transform: translateY(2px);
+  box-shadow: 1px 1px black; 
+}
+
+main #upload-form{
+  margin-top: 2.625%;
+  background-color: #3498DB;
+  border-radius: 4px;
+  width: 214px;
+  height: 32px;
+  position: relative;
+}
+
+main #upload-form input{
+  opacity: 0;
+  margin-left: 7px;
+  position: absolute;
+  width: 214px;
+  top: 7px;
+  font-size: 12px;
+  font-weight: lighter;
+  color: white;
+}
+
+main #upload-form #upload-form-placeholder{
+  margin-left: 7%;
+  position: absolute;
+  width: 214px;
+  top: 7px;
+  font-size: 12px;
+  font-weight: lighter;
+  color: white;
+}
+
+main #upload-form #upload-form-placeholder:hover{
+  cursor: pointer;
+}
+
+main #upload-form input::file-selector-button{
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 12px;
+  width:max-content;
+  height: max-content;
+  font-weight: lighter;
+}
+
+main #upload-form:hover {
+  cursor: pointer;
+  background-color: #3498db49;
+  box-shadow: 2px 2px black;
+}
+
+main #upload-form input::file-selector-button:hover, main #upload-form input:hover {
+  cursor: pointer;
+}
+
+main #upload-form:active {
+  transform: translateY(1px);
+  box-shadow: 1px 1px black;
+}
+
+main #border-options{
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  height: 90px;
+  width: 140px;
+}
+
+main #border-radius-input{
+  height: 12px;
+  width: 98px;
+  accent-color: red;
+  border: none;
+}
+
+main #border-radius-input:hover {
+  cursor: pointer;
+}
+
+main #border-color-input{
+  -webkit-appearance: none;
+  appearance: none;
+  inline-size: 0;
+  height: 20px;
+  width: 35px;
+}
+
+main #border-color-input:hover {
+  cursor: pointer;
+}

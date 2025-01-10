@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Kitsu|Avatar Designer</title>
+  </head>
+  <body>
+      <nav id="navbar">
+        <ul class="navbar-elements">
+          <li id="navbar-home">
+            <a href="">Home</a>
+          </li>
+          <li id="navbar-features">
+            <a href="">Features</a>
+          </li>
+          <li id="navbar-about">
+            <a href="">About</a>
+          </li>
+          <li id="navbar-contact">
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="content">
+          <h1>Avatar Designer</h1>
+          <div class="instruction">
+            <p>
+              Upload your image or try one of the provided options:
+            </p>
+          </div>
+            <div id="image-container">
+              <img alt="user_image" class="user_image" data-value="0">
+              <img src="./img/cat1.png" alt="cat1_image" class="cat1_image enabled" data-value="1">
+              <img src="./img/cat2.jpg" alt="cat2_image" class="cat2_image" data-value="2">
+              <img src="./img/cat3.png" alt="cat3_image" class="cat3_image" data-value="3">
+            </div>
+            <div id="button-container">
+              <button class="img-button  enabled" data-value="1">Image 1</button>
+              <button class="img-button" data-value="2">Image 2</button>
+              <button class="img-button" data-value="3">Image 3</button>
+            </div>
+            <div id="upload-form">
+              <label for="avatar">
+                <input type="file" id="avatar" accept="image/*">
+                <span id="upload-form-placeholder">Choose a file...</span>
+              </label>
+            </div>
+            <div id="border-options">
+              <p class="border-instruction">Adjust border radius:</p>
+              <label for="border-radius-input">
+                <input type="range" id="border-radius-input">
+              </label>
+              <p class="border-instruction">Choose border color:</p>
+              <label for="border-color-input">
+                <input type="color" id="border-color-input" value="#FFA500">
+              </label>
+            </div>
+        </div>
+      </main>
+      <script src="index.js"></script>
+  </body>
+</html>
